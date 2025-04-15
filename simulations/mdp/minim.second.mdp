@@ -1,0 +1,23 @@
+
+integrator               = steep 
+emtol                    = 10
+emstep 			 = 0.01
+nsteps                   = 10000000 ;50 vacuum 
+
+cutoff-scheme            = Verlet
+nstlist                  = 30
+ns_type                  = grid
+pbc                      = xyz
+periodic-molecules	 = no
+rlist 			 = 1.2
+
+define 			 = -DFLEXIBLE
+coulombtype              = PME
+constraints 		 = none
+
+rcoulomb 		 = 1.1
+epsilon_r                = 2.5
+vdw_type                 = cutoff
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+

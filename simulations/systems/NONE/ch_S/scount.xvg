@@ -1,0 +1,35 @@
+# This file was created Sat Jan  7 18:43:44 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2019.6 (-:
+# 
+# Executable:   /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0/bin/gmx
+# Data prefix:  /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0
+# Working dir:  /home/leskoura/ING/RIB_3/ch_S
+# Command line:
+#   gmx do_dssp -f kan_chain_S.pdb -s kan_chain_S.pdb -ssdump
+# gmx do_dssp is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix + B-Sheet + B-Bridge + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "B-Sheet"
+@ s3 legend "B-Bridge"
+@ s4 legend "Bend"
+@ s5 legend "Turn"
+@ s6 legend "A-Helix"
+@ s7 legend "3-Helix"
+       0    67    29    25     2    10     2    38     3
+# Totals    67    29    25     2    10     2    38     3
+# SS pr.  0.61  0.27  0.23  0.02  0.09  0.02  0.35  0.03

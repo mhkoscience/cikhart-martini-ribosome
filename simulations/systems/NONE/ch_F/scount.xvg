@@ -1,0 +1,35 @@
+# This file was created Sat Jan  7 18:41:55 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2019.6 (-:
+# 
+# Executable:   /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0/bin/gmx
+# Data prefix:  /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0
+# Working dir:  /home/leskoura/ING/RIB_3/ch_F
+# Command line:
+#   gmx do_dssp -f kan_chain_F.pdb -s kan_chain_F.pdb -ssdump
+# gmx do_dssp is part of G R O M A C S:
+#
+# Gromacs Runs On Most of All Computer Systems
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix + B-Sheet + B-Bridge + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "B-Sheet"
+@ s3 legend "B-Bridge"
+@ s4 legend "Bend"
+@ s5 legend "Turn"
+@ s6 legend "A-Helix"
+@ s7 legend "3-Helix"
+       0   100    46    20     7    21    24    49     9
+# Totals   100    46    20     7    21    24    49     9
+# SS pr.  0.57  0.26  0.11  0.04  0.12  0.14  0.28  0.05

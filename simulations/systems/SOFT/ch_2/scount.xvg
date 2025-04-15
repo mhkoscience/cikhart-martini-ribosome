@@ -1,0 +1,32 @@
+# This file was created Sat Jan  7 18:41:31 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2019.6 (-:
+# 
+# Executable:   /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0/bin/gmx
+# Data prefix:  /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0
+# Working dir:  /home/leskoura/ING/RIB_3/ch_2
+# Command line:
+#   gmx do_dssp -f kan_chain_2.pdb -s kan_chain_2.pdb -ssdump
+# gmx do_dssp is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix +  +  + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "Bend"
+@ s3 legend "Turn"
+@ s4 legend "A-Helix"
+       0    28    12     5     3    25
+# Totals    28    12     5     3    25
+# SS pr.  0.62  0.27  0.11  0.07  0.56

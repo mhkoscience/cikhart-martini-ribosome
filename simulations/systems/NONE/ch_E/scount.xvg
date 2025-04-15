@@ -1,0 +1,33 @@
+# This file was created Sat Jan  7 18:41:53 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2019.6 (-:
+# 
+# Executable:   /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0/bin/gmx
+# Data prefix:  /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0
+# Working dir:  /home/leskoura/ING/RIB_3/ch_E
+# Command line:
+#   gmx do_dssp -f kan_chain_E.pdb -s kan_chain_E.pdb -ssdump
+# gmx do_dssp is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix +  + B-Bridge + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "B-Bridge"
+@ s3 legend "Bend"
+@ s4 legend "Turn"
+@ s5 legend "A-Helix"
+       0    93    70    12    37    18    63
+# Totals    93    70    12    37    18    63
+# SS pr.  0.47  0.35  0.06  0.19  0.09  0.31

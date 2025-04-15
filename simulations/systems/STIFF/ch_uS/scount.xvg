@@ -1,0 +1,32 @@
+# This file was created Sat Jan  7 18:43:51 2023
+# Created by:
+#                     :-) GROMACS - gmx do_dssp, 2019.6 (-:
+# 
+# Executable:   /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0/bin/gmx
+# Data prefix:  /usr/local/programs/custom/gromacs/gromacs-2019.6/gcc-5.5.0-cuda-9.0
+# Working dir:  /home/leskoura/ING/RIB_3/ch_uS
+# Command line:
+#   gmx do_dssp -f kan_chain_u.pdb -s kan_chain_u.pdb -ssdump
+# gmx do_dssp is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "Secondary Structure"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number of Residues"
+@TYPE xy
+@ subtitle "Structure = A-Helix +  +  + Turn"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Structure"
+@ s1 legend "Coil"
+@ s2 legend "Bend"
+@ s3 legend "Turn"
+@ s4 legend "A-Helix"
+       0    35    19    10    10    25
+# Totals    35    19    10    10    25
+# SS pr.  0.55  0.30  0.16  0.16  0.39

@@ -1,0 +1,13 @@
+#include "martini.itp"
+    
+#define RUBBER_BANDS
+  
+#include "Nucleic_a.itp"
+    
+[ system ]
+; name
+Martini system from kan_chain_a.pdb
+    
+[ molecules ]
+; name        number
+Nucleic_a 	 1

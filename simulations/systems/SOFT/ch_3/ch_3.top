@@ -1,0 +1,13 @@
+#include "martini.itp"
+
+#define RUBBER_BANDS
+
+#include "Protein_3.itp"
+
+[ system ]
+; name
+Martini system from kan_chain_3.pdb
+
+[ molecules ]
+; name        number
+Protein_3 	 1
